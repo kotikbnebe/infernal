@@ -1,1 +1,9 @@
+local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/bacon"))()
+local window = lib:CreateWindow("infernal mode")
 
+local toggle = lib:CreateToggle(window, "loop remove flame zone", false, function(toggleState)
+    toggled = not toggled
+    while toggled and game:GetService('RunService').Heartbeat:Wait() do
+        warn("soon")
+    end
+end)
